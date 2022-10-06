@@ -1,0 +1,86 @@
+
+#somos{
+    padding: 125px 12px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+
+#somos .container{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#somos h3{
+    margin-top: 0;
+}
+
+#somos .descripcion{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somos .img-container{
+    background-image: url("recursos/logoservicioscba.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 700px;
+    opacity: 0.8;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+#somos .img-container:hover{
+    opacity: 1;
+}
+
+#lemas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    color: black;
+    background-color: rgb(245, 245, 245);
+}
+
+#lemas ul { 
+    list-style-type: disc;
+    font-size: 3em;
+}
+
+#lemas ul:hover{
+    color: orangered;
+}
+
+@media only screen and (min-width: $mediaCelular) {
+    
+    #somos .img-container{
+        display: none;
+    }
+
+    #somos .container{
+        margin-top: 30%;
+    }
+
+    #somos .descripcion{
+     
+        text-align: center;
+        padding-left: 0px;
+
+    }
+
+    #lemas ul { 
+        font-size: 2em;
+    }
+
+}

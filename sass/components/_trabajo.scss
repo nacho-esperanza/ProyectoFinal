@@ -1,0 +1,131 @@
+
+#trabajo{
+    padding: 50px 12px;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    text-align: center;
+}
+
+#trabajo .container{
+    margin-top: 2%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#trabajo1{
+    padding: 125px 12px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#trabajo1 .container{
+    margin-top: 2%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#trabajo1 .descripcion{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#trabajo1 .img-container{
+    background-image: url("recursos/trabajos/limpiezaynivelacion.png");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 700px;
+    opacity: 0.8;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+#trabajo1 .img-container:hover{
+    opacity: 1;
+}
+
+#trabajo2{
+    padding: 125px 12px;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    text-align: center;
+}
+
+#trabajo2 .container{
+    margin-top: 2%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#trabajo2 .descripcion{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#trabajo2 .img-container{
+    background-image: url("recursos/trabajos/bacheo.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 700px;
+    opacity: 0.8;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+#trabajo2 .img-container:hover{
+    opacity: 1;
+    }
+
+
+
+    @media only screen and (min-width: $mediaCelular) {
+    
+        #trabajo .container{
+            margin-top: 30%;
+        }
+    
+        #trabajo .descripcion{
+         
+            text-align: center;
+            padding-left: 0px;
+    
+        }
+    
+    
+        #trabajo1 .descripcion{
+            width: 70%;
+            max-width: 500px;
+        }
+        
+        #trabajo1 .img-container{
+            height: 550px;
+            width: 500px;
+        }
+    
+        #trabajo2 .descripcion{
+            width: 70%;
+            max-width: 500px;
+    
+        }
+        
+        #trabajo2 .img-container{
+            height: 550px;
+            width: 500px;
+        }
+    
+    }

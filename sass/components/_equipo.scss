@@ -1,0 +1,27 @@
+#equipo{
+    padding: 50px 12px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#equipo .container{
+    margin-top: 2%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#equipo .descripcion{
+    width: 80%;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (min-width: $mediaCelular) {
+    #equipo{
+        padding-top: 40%;
+    }
+}
