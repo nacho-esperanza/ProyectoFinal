@@ -1,8 +1,8 @@
 
 #somos{
     padding: 125px 12px;
-    background-color: rgb(30, 30, 30);
-    color: white;
+    background-color: $fondo-oscuro;
+    color: $blanco;
     text-align: center;
 }
 
@@ -49,8 +49,8 @@
     text-align: center;
     flex-direction: column;
     height: 50vh;
-    color: black;
-    background-color: rgb(245, 245, 245);
+    color: $negro;
+    background-color: $fondo-claro;
 }
 
 #lemas ul { 
@@ -59,7 +59,7 @@
 }
 
 #lemas ul:hover{
-    color: orangered;
+    color: $color-principal;
 }
 
 @media only screen and (min-width: $mediaCelular) {

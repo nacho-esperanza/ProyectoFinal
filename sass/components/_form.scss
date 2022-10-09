@@ -29,12 +29,12 @@
     text-decoration: none;
     width: 100%;
     margin-bottom: 15px;
-    color: black;
+    color: $negro;
     font-weight: 700;
 }
 
 .container-form a i{
-    color: orangered;
+    color: $color-principal;
     margin-right: 10px;
 }
 
@@ -60,8 +60,8 @@
     font-size: 16px;
     border: none;
     outline: 0px;
-    background: orangered;
-    color: white;
+    background: $color-principal;
+    color: $blanco;
     border-radius: 3px;
     cursor: pointer;
     transform: all 300ms ease;

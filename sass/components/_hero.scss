@@ -5,7 +5,7 @@
     text-align: center;
     flex-direction: column;
     height: 100vh;
-    color: white;
+    color: $blanco;
     background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.6),
@@ -18,12 +18,12 @@
 }
 
 #hero h1{
-    color: orangered;
-    font-family: 'Lora', serif;
+    color: $color-principal;
+    font-family: $fuente-hero;
 }
 
 #hero h2{
-    font-family: 'Lora', serif;
+    font-family: $fuente-hero;
 }
 
 #button-row{
