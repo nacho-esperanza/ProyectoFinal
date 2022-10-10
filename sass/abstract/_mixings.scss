@@ -1,0 +1,57 @@
+
+// mixin para simplificar @media del celular
+
+@mixin celular(){
+    @media only screen and (min-width: $mediaCelular){
+        @content;
+    }
+}
+
+
+
+//Mixin para trabajo
+@mixin rect-cont{
+    margin-top: 2%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin trabajo-descr{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin trabajo-img($img){
+    background-image: $img;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 700px;
+    opacity: 0.8;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+@mixin rectangulo($color-fondo, $color-texto){
+    padding: 50px 12px;
+    background-color: $color-fondo;
+    color: $color-texto;
+    text-align: center;
+}
+
+
+// Mixin para equipo
+
+@mixin equipo-descr{
+    width: 80%;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

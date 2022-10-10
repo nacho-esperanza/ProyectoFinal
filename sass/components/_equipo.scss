@@ -1,27 +1,18 @@
 #equipo{
-    padding: 50px 12px;
-    background-color: $fondo-claro;
-    color: $blanco;
-    text-align: center;
+    @include rectangulo($fondo-oscuro, $blanco);
 }
 
 #equipo .container{
-    margin-top: 2%;
-    padding: 50px 0px;
-    display: flex;
-    justify-content: space-evenly;
+    @include rect-cont;
 }
 
 #equipo .descripcion{
-    width: 80%;
-    text-align: initial;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include equipo-descr;
 }
 
-@media only screen and (min-width: $mediaCelular) {
+@include celular(){
     #equipo{
         padding-top: 40%;
     }
 }
+

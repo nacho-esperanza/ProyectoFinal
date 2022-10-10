@@ -159,7 +159,7 @@ header a:hover {
 
 #equipo {
   padding: 50px 12px;
-  background-color: whitesmoke;
+  background-color: #1e1e1e;
   color: white;
   text-align: center; }
 
@@ -193,7 +193,7 @@ header a:hover {
   justify-content: space-evenly; }
 
 #trabajo1 {
-  padding: 125px 12px;
+  padding: 50px 12px;
   background-color: #1e1e1e;
   color: white;
   text-align: center; }
@@ -227,7 +227,7 @@ header a:hover {
   opacity: 1; }
 
 #trabajo2 {
-  padding: 125px 12px;
+  padding: 50px 12px;
   background-color: whitesmoke;
   color: black;
   text-align: center; }

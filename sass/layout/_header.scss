@@ -37,19 +37,20 @@ header a:hover{
     color: $color-principal;
 }
 
-@media only screen and (min-width: $mediaCelular) {
+ 
+    @include celular(){
+        header .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     
-    header .container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        header nav{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+    
     }
-
-    header nav{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 25px;
-    }
-
-}
+    

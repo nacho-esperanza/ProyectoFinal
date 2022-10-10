@@ -62,8 +62,7 @@
     color: $color-principal;
 }
 
-@media only screen and (min-width: $mediaCelular) {
-    
+@include celular(){
     #somos .img-container{
         display: none;
     }
@@ -82,5 +81,5 @@
     #lemas ul { 
         font-size: 2em;
     }
-
 }
+

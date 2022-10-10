@@ -71,9 +71,9 @@
 //      .container-form .btn-enviar:hover       
 
 
-@media only screen and (min-width: $mediaCelular) {
+@include celular(){
     #formulario{
         padding-top: 40%;
     }
-
 }
+
