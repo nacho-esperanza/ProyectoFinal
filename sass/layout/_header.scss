@@ -3,54 +3,57 @@ header{
     width: 100%;
     background-color: $fondo-claro;
     font-family: $fuente-hero;
-}
 
-header .logo{
-    margin: 0;
-    padding: 35px 40px;
-    font-weight: bold;
-    color: $color-principal;
-    font-size: 1.7em;
-}
-
-header .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 0;
-}
-
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: $negro;
-}
-
-header a:hover{
-    color: $color-principal;
-}
-
- 
-    @include celular(){
-        header .container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        header nav{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            padding-bottom: 25px;
-        }
-    
+    .logo{
+        margin: 0;
+        padding: 35px 40px;
+        font-weight: bold;
+        color: $color-principal;
+        font-size: 1.7em;
     }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    a{
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: $negro;
+    }
+
+    a:hover{
+        color: $color-principal;
+    }
+
+    
+}
+ 
+
+@include celular(){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+}
+    
     

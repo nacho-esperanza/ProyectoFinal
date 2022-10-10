@@ -30,35 +30,30 @@ header {
   width: 100%;
   background-color: whitesmoke;
   font-family: "Lora", serif; }
+  header .logo {
+    margin: 0;
+    padding: 35px 40px;
+    font-weight: bold;
+    color: orangered;
+    font-size: 1.7em; }
+  header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0; }
+  header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black; }
+  header a:hover {
+    color: orangered; }
 
-header .logo {
-  margin: 0;
-  padding: 35px 40px;
-  font-weight: bold;
-  color: orangered;
-  font-size: 1.7em; }
-
-header .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-header nav {
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 0; }
-
-header a {
-  padding: 5px 12px;
-  text-decoration: none;
-  font-weight: bold;
-  color: black; }
-
-header a:hover {
-  color: orangered; }
-
-@media only screen and (min-width: 720px) {
+@media (max-width: 720px) {
   header .container {
     display: flex;
     flex-direction: column;
@@ -81,53 +76,61 @@ header a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
-
-#hero h1 {
-  color: orangered;
-  font-family: "Lora", serif; }
-
-#hero h2 {
-  font-family: "Lora", serif; }
+  #hero h1 {
+    color: orangered;
+    font-family: "Lora", serif; }
+  #hero h2 {
+    font-family: "Lora", serif; }
 
 #button-row {
   display: flex;
   flex-direction: row; }
+
+button {
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
+  margin-right: 25%;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: orangered; }
+
+button:hover {
+  background-color: #db5415;
+  cursor: pointer; }
 
 #somos {
   padding: 125px 12px;
   background-color: #1e1e1e;
   color: white;
   text-align: center; }
-
-#somos .container {
-  padding: 100px 0px;
-  display: flex;
-  justify-content: space-evenly; }
-
-#somos h3 {
-  margin-top: 0; }
-
-#somos .descripcion {
-  width: 50%;
-  max-width: 600px;
-  text-align: initial;
-  padding-left: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-#somos .img-container {
-  background-image: url("recursos/logoservicioscba.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 500px;
-  width: 700px;
-  opacity: 0.8;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  transition: 0.5s; }
-
-#somos .img-container:hover {
-  opacity: 1; }
+  #somos .container {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-evenly; }
+  #somos h3 {
+    margin-top: 0; }
+  #somos .descripcion {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #somos .img-container {
+    background-image: url("recursos/logoservicioscba.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 700px;
+    opacity: 0.8;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s; }
+  #somos .img-container:hover {
+    opacity: 1; }
 
 #lemas {
   display: flex;
@@ -138,15 +141,13 @@ header a:hover {
   height: 50vh;
   color: black;
   background-color: whitesmoke; }
+  #lemas ul {
+    list-style-type: disc;
+    font-size: 3em; }
+  #lemas ul:hover {
+    color: orangered; }
 
-#lemas ul {
-  list-style-type: disc;
-  font-size: 3em; }
-
-#lemas ul:hover {
-  color: orangered; }
-
-@media only screen and (min-width: 720px) {
+@media (max-width: 720px) {
   #somos .img-container {
     display: none; }
   #somos .container {
@@ -162,21 +163,21 @@ header a:hover {
   background-color: #1e1e1e;
   color: white;
   text-align: center; }
+  #equipo .container {
+    margin-top: 2%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly; }
+  #equipo .descripcion {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
-#equipo .container {
-  margin-top: 2%;
-  padding: 50px 0px;
-  display: flex;
-  justify-content: space-evenly; }
-
-#equipo .descripcion {
-  width: 80%;
-  text-align: initial;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-@media only screen and (min-width: 720px) {
+@media (max-width: 720px) {
   #equipo {
     padding-top: 40%; } }
 
@@ -185,82 +186,73 @@ header a:hover {
   background-color: whitesmoke;
   color: black;
   text-align: center; }
-
-#trabajo .container {
-  margin-top: 2%;
-  padding: 50px 0px;
-  display: flex;
-  justify-content: space-evenly; }
+  #trabajo .container {
+    margin-top: 2%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly; }
 
 #trabajo1 {
   padding: 50px 12px;
   background-color: #1e1e1e;
   color: white;
   text-align: center; }
-
-#trabajo1 .container {
-  margin-top: 2%;
-  padding: 50px 0px;
-  display: flex;
-  justify-content: space-evenly; }
-
-#trabajo1 .descripcion {
-  width: 50%;
-  max-width: 600px;
-  text-align: initial;
-  padding-left: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-#trabajo1 .img-container {
-  background-image: url("recursos/trabajos/limpiezaynivelacion.png");
-  background-size: cover;
-  background-position: center center;
-  height: 500px;
-  width: 700px;
-  opacity: 0.8;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  transition: 0.5s; }
-
-#trabajo1 .img-container:hover {
-  opacity: 1; }
+  #trabajo1 .container {
+    margin-top: 2%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly; }
+  #trabajo1 .descripcion {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #trabajo1 .img-container {
+    background-image: url("recursos/trabajos/limpiezaynivelacion.png");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 700px;
+    opacity: 0.8;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s; }
+  #trabajo1 .img-container:hover {
+    opacity: 1; }
 
 #trabajo2 {
   padding: 50px 12px;
   background-color: whitesmoke;
   color: black;
   text-align: center; }
+  #trabajo2 .container {
+    margin-top: 2%;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly; }
+  #trabajo2 .descripcion {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  #trabajo2 .img-container {
+    background-image: url("recursos/trabajos/bacheo.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 700px;
+    opacity: 0.8;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s; }
+  #trabajo2 .img-container:hover {
+    opacity: 1; }
 
-#trabajo2 .container {
-  margin-top: 2%;
-  padding: 50px 0px;
-  display: flex;
-  justify-content: space-evenly; }
-
-#trabajo2 .descripcion {
-  width: 50%;
-  max-width: 600px;
-  text-align: initial;
-  padding-left: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-#trabajo2 .img-container {
-  background-image: url("recursos/trabajos/bacheo.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 500px;
-  width: 700px;
-  opacity: 0.8;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  transition: 0.5s; }
-
-#trabajo2 .img-container:hover {
-  opacity: 1; }
-
-@media only screen and (min-width: 720px) {
+@media (max-width: 720px) {
   #trabajo .container {
     margin-top: 30%; }
   #trabajo .descripcion {
@@ -279,99 +271,85 @@ header a:hover {
     height: 550px;
     width: 500px; } }
 
-img {
-  width: 100%;
-  opacity: 0.7;
-  transition: 0.5s; }
-
-img:hover {
-  width: 101%;
-  opacity: 1; }
-
 .galeria {
   display: flex;
   padding: 5px; }
-
-.columnas {
-  flex: 25%;
-  padding: 5px; }
-
-.columnas img {
-  margin-top: 5px; }
+  .galeria .columnas {
+    flex: 25%;
+    padding: 5px; }
+  .galeria .columnas img {
+    margin-top: 5px; }
+  .galeria img {
+    width: 100%;
+    opacity: 0.7;
+    transition: 0.5s; }
+  .galeria img:hover {
+    width: 101%;
+    opacity: 1; }
 
 #formulario {
   padding: 50px 12px; }
+  #formulario .container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px; }
+  #formulario .container-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px; }
+  #formulario .container-form p {
+    font-size: 17px;
+    line-height: 1,6;
+    margin-bottom: 30px; }
+  #formulario .container-form a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700; }
+  #formulario .container-form a i {
+    color: orangered;
+    margin-right: 10px; }
+  #formulario .container-form form .campo, #formulario textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px; }
+  #formulario .container-form form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px; }
+  #formulario .container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: orangered;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transform: all 300ms ease; }
 
-.container-form {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  margin-top: 90px; }
-
-.container-form h2 {
-  margin-bottom: 15px;
-  font-size: 35px; }
-
-.container-form p {
-  font-size: 17px;
-  line-height: 1,6;
-  margin-bottom: 30px; }
-
-.container-form a {
-  font-size: 17px;
-  display: inline-block;
-  text-decoration: none;
-  width: 100%;
-  margin-bottom: 15px;
-  color: black;
-  font-weight: 700; }
-
-.container-form a i {
-  color: orangered;
-  margin-right: 10px; }
-
-.container-form form .campo, textarea {
-  width: 100%;
-  padding: 15px 10px;
-  font-size: 15px;
-  border: 1px solid #dbdbdb;
-  margin-bottom: 20px;
-  border-radius: 3px;
-  outline: 0px; }
-
-.container-form form textarea {
-  max-width: 530px;
-  min-width: 530px;
-  min-height: 140px;
-  max-height: 150px; }
-
-.container-form .btn-enviar {
-  padding: 15px;
-  font-size: 16px;
-  border: none;
-  outline: 0px;
-  background: orangered;
-  color: white;
-  border-radius: 3px;
-  cursor: pointer;
-  transform: all 300ms ease; }
-
-@media only screen and (min-width: 720px) {
+@media (max-width: 720px) {
   #formulario {
     padding-top: 40%; } }
 
 footer {
   background-color: #e6e6e6; }
-
-footer p {
-  margin: 0;
-  color: #646464; }
-
-footer .container {
-  height: 3vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; }
+  footer p {
+    margin: 0;
+    color: #646464; }
+  footer .container {
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }

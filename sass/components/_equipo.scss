@@ -1,13 +1,13 @@
 #equipo{
     @include rectangulo($fondo-oscuro, $blanco);
-}
 
-#equipo .container{
-    @include rect-cont;
-}
+    .container{
+        @include rect-cont;
+    }
 
-#equipo .descripcion{
-    @include equipo-descr;
+    .descripcion{
+        @include descripcion;
+    }
 }
 
 @include celular(){

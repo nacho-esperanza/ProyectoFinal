@@ -1,54 +1,56 @@
 
 #trabajo{
     @include rectangulo($fondo-claro, $negro);
-}
 
-#trabajo .container{
-    @include rect-cont;
+    .container{
+        @include rect-cont;
+    }
 }
 
 #trabajo1{
     @include rectangulo($fondo-oscuro, $blanco);
+
+    .container{
+        @include rect-cont;
+    }
+
+    .descripcion{
+        @include descripcion;
+    }
+
+    .img-container{
+        @include img-cont($img-trabajo1);
+    }
+
+    .img-container:hover{
+        opacity: 1;
+    }
 }
 
-#trabajo1 .container{
-    @include rect-cont;
-}
-
-#trabajo1 .descripcion{
-    @include trabajo-descr;
-}
-
-#trabajo1 .img-container{
-    @include trabajo-img($img-trabajo1);
-}
-
-#trabajo1 .img-container:hover{
-    opacity: 1;
-}
 
 #trabajo2{
     @include rectangulo($fondo-claro, $negro);
-}
 
-#trabajo2 .container{
-    @include rect-cont;
-}
-
-#trabajo2 .descripcion{
-    @include trabajo-descr;
-}
-
-#trabajo2 .img-container{
-    @include trabajo-img($img-trabajo2);
-}
-
-#trabajo2 .img-container:hover{
-    opacity: 1;
+    .container{
+        @include rect-cont;
     }
 
+    .descripcion{
+        @include descripcion;
+    }
 
-    @include celular(){
+    .img-container{
+        @include img-cont($img-trabajo2);
+    }
+
+    .img-container:hover{
+        opacity: 1;
+        }
+}
+
+
+
+@include celular(){
         #trabajo .container{
             margin-top: 30%;
         }
@@ -81,5 +83,5 @@
             height: 550px;
             width: 500px;
         }
-    }
+ }
 

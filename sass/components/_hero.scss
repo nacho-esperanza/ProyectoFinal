@@ -15,18 +15,38 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
+    h1{
+        color: $color-principal;
+        font-family: $fuente-hero;
+    }
+    
+    h2{
+        font-family: $fuente-hero;
+    }
+
 }
 
-#hero h1{
-    color: $color-principal;
-    font-family: $fuente-hero;
-}
 
-#hero h2{
-    font-family: $fuente-hero;
-}
 
 #button-row{
     display: flex;
     flex-direction: row;
+}
+
+button{
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    margin-right: 25%;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: orangered;
+}
+
+button:hover{
+    background-color: rgb(219, 84, 21);
+    cursor: pointer;
 }

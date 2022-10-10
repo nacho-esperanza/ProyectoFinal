@@ -2,7 +2,7 @@
 // mixin para simplificar @media del celular
 
 @mixin celular(){
-    @media only screen and (min-width: $mediaCelular){
+    @media (max-width: $mediaCelular){
         @content;
     }
 }
@@ -17,7 +17,7 @@
     justify-content: space-evenly;
 }
 
-@mixin trabajo-descr{
+@mixin descripcion{
     width: 50%;
     max-width: 600px;
     text-align: initial;
@@ -27,7 +27,7 @@
     justify-content: center;
 }
 
-@mixin trabajo-img($img){
+@mixin img-cont($img){
     background-image: $img;
     background-size: cover;
     background-position: center center;
